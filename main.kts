@@ -21,11 +21,11 @@ val mapFoldResults = (1..15).map {i ->
 // This is a utility function for your use as you choose, and as an
 // example of an extension method
 fun Int.times(block: () -> String): String {
-    var result = ""
+    var total = ""
     for (it in 1..this) {
-        result = result + block()
+        total = total + block()
     }
-    return result
+    return total
 }
 
 // Use this function
